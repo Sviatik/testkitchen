@@ -1,0 +1,12 @@
+---
+#- include_vars: pass.yml
+
+- name: MySQL repo | Add
+  yum: name=https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm state=present
+
+- name: MySQL | Install
+  yum: name=mysql-community-server state=present update_cache=yes
+
+#- name: Var | Debug
+#  debug: msg={{ DB_USER }} 
+#         msg={{ DB_PASSWORD }} 

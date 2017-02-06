@@ -1,0 +1,14 @@
+---
+- name: include_vars
+  include_vars: 
+    file: main.yml
+
+- name: aplly conf test_hibernate
+  template:
+    src: hibernate_test.cfg.xml.j2
+    dest: /root/oms/src/test/resources/hibernate_test.cfg.xml
+
+- name: aplly conf main_hibernate
+  template:
+    src: hibernate.cfg.xml.j2
+    dest: oms/src/main/webapp/WEB-INF/hibernate.cfg.xml

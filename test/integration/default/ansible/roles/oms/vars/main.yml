@@ -1,0 +1,5 @@
+---
+  mysql_user: mysql
+  mysql_pass: mysql524297
+  mysql_url: localhost
+  mysql_port: 3306

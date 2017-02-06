@@ -1,0 +1,16 @@
+---
+driver:
+  name: docker
+  #use_sudo: false
+
+provisioner:
+  name: ansible_playbook
+  hosts: localhost
+  #use_sudo: true
+
+platforms:
+  - name: centos-6.8
+
+suites:
+  - name: default
+    drive:

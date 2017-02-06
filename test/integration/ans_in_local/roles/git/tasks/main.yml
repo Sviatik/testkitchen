@@ -1,0 +1,5 @@
+---
+- name: clon repository in local mashina
+  git:
+    repo: https://github.com/Sviatik/oms.git
+    dest: /root/oms

@@ -1,0 +1,19 @@
+---
+- name: main conf yml
+  gather_facts: True
+  hosts: all
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  roles:
+     - oms
+     - git
+     - test
+     - mysql1
+     - mysql 
+     - firewall
+     - generic
+     - upgrade
+     - java
+     - tomcat

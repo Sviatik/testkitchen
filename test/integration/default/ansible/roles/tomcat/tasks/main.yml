@@ -1,0 +1,14 @@
+---
+- name: tomcat | install
+  yum: state=present name={{ item }}
+  with_items:
+    - tomcat
+    - tomcat-webapps
+    - tomcat-admin-webapps 
+
+
+- name: tomcat | start
+  service:
+     name: tomcat
+     state: started
+     enabled: yes
