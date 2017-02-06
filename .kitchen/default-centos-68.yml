@@ -1,9 +1,9 @@
 ---
 username: kitchen
-ssh_key: /root/.kitchen/docker_id_rsa
-image_id: 5b9d01c53fec
-container_id: 8ab9b2b3c502e078ae33232ac1c0a30d0ddc4ea266a1c0373a9aaec2844a7e7e
+ssh_key: /root/testkitchen/.kitchen/docker_id_rsa
+image_id: 51f9097fd666
+container_id: c3c4500e519de933c113b36059bac8204618e9f8dc26121808674a6e2b5b0002
 hostname: localhost
 port: 32768
-last_action: create
-last_error: Kitchen::ActionFailed
+last_action: converge
+last_error: 

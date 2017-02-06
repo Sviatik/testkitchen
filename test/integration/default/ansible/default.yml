@@ -8,13 +8,13 @@
 
   roles:
 #      - shell
-     - oms
+#     - oms
 #     - git
 #     - test
 #     - mysql1
 #     - mysql 
 #     - firewall
-#     - generic
+     - generic
 #     - upgrade
 #     - java
 #     - tomcat
