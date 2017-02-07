@@ -12,3 +12,10 @@
 ## If you run test with serverspec you must install plugin
 
   gem install kitchen-verifier-serverspec
+
+
+  gem 'serverspec'
+  gem 'test-kitchen'
+  gem 'kitchen-docker'
+  gem 'kitchen-ansible'
+  gem 'kitchen-verifier-serverspec'
