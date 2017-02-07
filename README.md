@@ -7,6 +7,7 @@
 ## If you run test in docker you must install docker
   
   yum install docker
+  
   systemctl start docker
   
 ## If you run test with serverspec you must install plugin
@@ -15,7 +16,11 @@
 
 
   gem 'serverspec'
+  
   gem 'test-kitchen'
+  
   gem 'kitchen-docker'
+  
   gem 'kitchen-ansible'
+  
   gem 'kitchen-verifier-serverspec'
