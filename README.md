@@ -9,3 +9,6 @@
   yum install docker
   systemctl start docker
   
+## If you run test with serverspec you must install plugin
+
+  gem install kitchen-verifier-serverspec
