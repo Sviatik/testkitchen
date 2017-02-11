@@ -1,0 +1,20 @@
+I, [2017-02-11T22:11:50.525977 #21829]  INFO -- default-centos-73: -----> Verifying <default-centos-73>...
+I, [2017-02-11T22:11:50.526631 #21829]  INFO -- default-centos-73: Preparing files for transfer
+I, [2017-02-11T22:11:50.849506 #21829]  INFO -- default-centos-73: -----> Busser installation detected (busser)
+I, [2017-02-11T22:11:50.849626 #21829]  INFO -- default-centos-73: Installing Busser plugins: busser-serverspec
+I, [2017-02-11T22:11:51.927095 #21829]  INFO -- default-centos-73: Plugin serverspec already installed
+I, [2017-02-11T22:11:52.172670 #21829]  INFO -- default-centos-73: Removing /tmp/verifier/suites/serverspec
+I, [2017-02-11T22:11:52.173966 #21829]  INFO -- default-centos-73: Transferring files to <default-centos-73>
+I, [2017-02-11T22:11:52.569432 #21829]  INFO -- default-centos-73: -----> Running serverspec test suite
+I, [2017-02-11T22:11:52.639423 #21829]  INFO -- default-centos-73: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2017-02-11T22:11:53.022148 #21829]  INFO -- default-centos-73: 
+I, [2017-02-11T22:11:53.022245 #21829]  INFO -- default-centos-73: ansible-$role::default
+I, [2017-02-11T22:11:53.022280 #21829]  INFO -- default-centos-73:   User "root"
+I, [2017-02-11T22:11:53.092875 #21829]  INFO -- default-centos-73: [32m    should exist[0m
+I, [2017-02-11T22:11:53.092962 #21829]  INFO -- default-centos-73:   Package "curl"
+I, [2017-02-11T22:11:53.103426 #21829]  INFO -- default-centos-73: [32m    should be installed[0m
+I, [2017-02-11T22:11:53.103534 #21829]  INFO -- default-centos-73: 
+I, [2017-02-11T22:11:53.103567 #21829]  INFO -- default-centos-73: Finished in 0.08442 seconds (files took 0.35853 seconds to load)
+I, [2017-02-11T22:11:53.103591 #21829]  INFO -- default-centos-73: [32m2 examples, 0 failures[0m
+I, [2017-02-11T22:11:53.103613 #21829]  INFO -- default-centos-73: 
+I, [2017-02-11T22:11:53.121383 #21829]  INFO -- default-centos-73: Finished verifying <default-centos-73> (0m2.59s).

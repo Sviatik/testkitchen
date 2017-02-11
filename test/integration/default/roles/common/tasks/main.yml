@@ -1,0 +1,13 @@
+- name: install RHEL/CentOS packages
+  yum: pkg={{ item }}
+  with_items: 
+     - curl
+     - epel-release
+     - vim
+     - git
+     - fail2ban
+     - htop
+     - atop
+     - python-pycurl
+     - sudo
+ 

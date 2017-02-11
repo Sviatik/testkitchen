@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: /root/testkitchen2/ansible-test-kitchen-exmaple/.kitchen/docker_id_rsa
+image_id: 9bca79e9ca9f
+container_id: 56fa833b8ff3fe5e66a68a2a8400c4028e09a6ee446d2049cdd4aadee3a03d29
+hostname: localhost
+port: 32769
+last_action: verify
+last_error: 
