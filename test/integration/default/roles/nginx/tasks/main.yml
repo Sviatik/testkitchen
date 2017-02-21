@@ -1,0 +1,35 @@
+---
+- name: install
+  yum: state=present name=nginx
+  
+- name: run
+  service: 
+    name: nginx
+    state: started
+    enabled: True
+
+
+- name: install python-lib required
+  yum: name=libsemanage-python state=present
+
+
+- name: past new conf
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+
+- name: create folder
+  file:
+    path: /etc/nginx/sites-enabled
+    state: directory
+    mode: 0755
+
+- name: copy curent config
+  template:
+    src: default.j2
+    dest: /etc/nginx/sites-enabled/default
+  notify:
+    restart nginx
+
+- name: allow tcp 80
+  shell: iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT

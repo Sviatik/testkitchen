@@ -1,0 +1,133 @@
+I, [2017-02-21T13:34:39.855741 #23563]  INFO -- default-centos-68: -----> Verifying <default-centos-68>...
+I, [2017-02-21T13:34:39.856319 #23563]  INFO -- default-centos-68: Preparing files for transfer
+I, [2017-02-21T13:34:40.084820 #23563]  INFO -- default-centos-68: -----> Busser installation detected (busser)
+I, [2017-02-21T13:34:40.085147 #23563]  INFO -- default-centos-68: Installing Busser plugins: busser-group_vars busser-serverspec
+I, [2017-02-21T13:34:41.994286 #23563]  INFO -- default-centos-68: /opt/chef/embedded/lib/ruby/site_ruby/2.3.0/rubygems/resolver/installer_set.rb:71:in `add_always_install': Unable to resolve dependency: user requested 'busser-group_vars (>= 0)' (Gem::UnsatisfiableDependencyError)
+I, [2017-02-21T13:34:41.994410 #23563]  INFO -- default-centos-68: 	from /opt/chef/embedded/lib/ruby/site_ruby/2.3.0/rubygems/dependency_installer.rb:474:in `resolve_dependencies'
+I, [2017-02-21T13:34:41.996078 #23563]  INFO -- default-centos-68: 	from /opt/chef/embedded/lib/ruby/site_ruby/2.3.0/rubygems/dependency_installer.rb:384:in `install'
+I, [2017-02-21T13:34:41.996140 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/rubygems.rb:44:in `install_gem'
+I, [2017-02-21T13:34:41.996181 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:66:in `install_plugin_gem'
+I, [2017-02-21T13:34:41.996208 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:53:in `install'
+I, [2017-02-21T13:34:41.996236 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:43:in `block (2 levels) in install_all'
+I, [2017-02-21T13:34:41.996538 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:43:in `each'
+I, [2017-02-21T13:34:41.996573 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:43:in `block in install_all'
+I, [2017-02-21T13:34:41.996612 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/rubygems.rb:71:in `silence_gem_ui'
+I, [2017-02-21T13:34:41.996643 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/lib/busser/command/plugin_install.rb:42:in `install_all'
+I, [2017-02-21T13:34:41.996689 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/command.rb:27:in `run'
+I, [2017-02-21T13:34:41.996871 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:126:in `invoke_command'
+I, [2017-02-21T13:34:41.996903 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `block in invoke_all'
+I, [2017-02-21T13:34:41.996932 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `each'
+I, [2017-02-21T13:34:41.996967 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `map'
+I, [2017-02-21T13:34:41.996997 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:133:in `invoke_all'
+I, [2017-02-21T13:34:41.997027 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/group.rb:232:in `dispatch'
+I, [2017-02-21T13:34:41.997060 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:115:in `invoke'
+I, [2017-02-21T13:34:41.997089 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:40:in `block in register'
+I, [2017-02-21T13:34:41.997119 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/command.rb:27:in `run'
+I, [2017-02-21T13:34:41.997147 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:126:in `invoke_command'
+I, [2017-02-21T13:34:41.997179 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:359:in `dispatch'
+I, [2017-02-21T13:34:41.997216 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:115:in `invoke'
+I, [2017-02-21T13:34:41.997507 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:235:in `block in subcommand'
+I, [2017-02-21T13:34:41.997541 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/command.rb:27:in `run'
+I, [2017-02-21T13:34:41.997570 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/invocation.rb:126:in `invoke_command'
+I, [2017-02-21T13:34:41.997599 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor.rb:359:in `dispatch'
+I, [2017-02-21T13:34:41.997633 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/thor-0.19.0/lib/thor/base.rb:440:in `start'
+I, [2017-02-21T13:34:41.997662 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/gems/gems/busser-0.7.1/bin/busser:8:in `<top (required)>'
+I, [2017-02-21T13:34:41.997689 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/bin/busser:22:in `load'
+I, [2017-02-21T13:34:41.997716 #23563]  INFO -- default-centos-68: 	from /tmp/verifier/bin/busser:22:in `<main>'
+E, [2017-02-21T13:34:42.005706 #23563] ERROR -- default-centos-68: Verify failed on instance <default-centos-68>.
+E, [2017-02-21T13:34:42.005831 #23563] ERROR -- default-centos-68: ------Exception-------
+E, [2017-02-21T13:34:42.005858 #23563] ERROR -- default-centos-68: Class: Kitchen::ActionFailed
+E, [2017-02-21T13:34:42.005874 #23563] ERROR -- default-centos-68: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+ruby="/opt/chef/embedded/bin/ruby"
+gem="/opt/chef/embedded/bin/gem"
+version="busser"
+gem_install_args="busser --no-rdoc --no-ri --no-format-executable -n /tmp/verifier/bin --no-user-install"
+busser="sudo -E /tmp/verifier/bin/busser"
+plugins="busser-group_vars busser-serverspec"
+
+$gem list busser -i 2>&1 >/dev/null
+if test $? -ne 0; then
+  echo "-----> Installing Busser ($version)"
+  $gem install $gem_install_args
+else
+  echo "-----> Busser installation detected ($version)"
+fi
+
+if test ! -f "$BUSSER_ROOT/bin/busser"; then
+  $busser setup
+fi
+
+echo "       Installing Busser plugins: $plugins"
+$busser plugin install $plugins
+']
+E, [2017-02-21T13:34:42.005887 #23563] ERROR -- default-centos-68: ----------------------
+E, [2017-02-21T13:34:42.005899 #23563] ERROR -- default-centos-68: ------Backtrace-------
+E, [2017-02-21T13:34:42.005911 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/verifier/base.rb:80:in `rescue in call'
+E, [2017-02-21T13:34:42.005924 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/verifier/base.rb:83:in `call'
+E, [2017-02-21T13:34:42.005938 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:434:in `block in verify_action'
+E, [2017-02-21T13:34:42.005950 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-02-21T13:34:42.005962 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-21T13:34:42.006001 #23563] ERROR -- default-centos-68: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-21T13:34:42.006013 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-21T13:34:42.006025 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:426:in `verify_action'
+E, [2017-02-21T13:34:42.006037 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-21T13:34:42.006057 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-21T13:34:42.006070 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-21T13:34:42.006082 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-02-21T13:34:42.006096 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-21T13:34:42.006109 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-21T13:34:42.006143 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-21T13:34:42.006161 #23563] ERROR -- default-centos-68: ----End Backtrace-----
+E, [2017-02-21T13:34:42.006173 #23563] ERROR -- default-centos-68: ---Nested Exception---
+E, [2017-02-21T13:34:42.006184 #23563] ERROR -- default-centos-68: Class: Kitchen::Transport::SshFailed
+E, [2017-02-21T13:34:42.006195 #23563] ERROR -- default-centos-68: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+ruby="/opt/chef/embedded/bin/ruby"
+gem="/opt/chef/embedded/bin/gem"
+version="busser"
+gem_install_args="busser --no-rdoc --no-ri --no-format-executable -n /tmp/verifier/bin --no-user-install"
+busser="sudo -E /tmp/verifier/bin/busser"
+plugins="busser-group_vars busser-serverspec"
+
+$gem list busser -i 2>&1 >/dev/null
+if test $? -ne 0; then
+  echo "-----> Installing Busser ($version)"
+  $gem install $gem_install_args
+else
+  echo "-----> Busser installation detected ($version)"
+fi
+
+if test ! -f "$BUSSER_ROOT/bin/busser"; then
+  $busser setup
+fi
+
+echo "       Installing Busser plugins: $plugins"
+$busser plugin install $plugins
+']
+E, [2017-02-21T13:34:42.006209 #23563] ERROR -- default-centos-68: ----------------------
+E, [2017-02-21T13:34:42.006221 #23563] ERROR -- default-centos-68: ------Backtrace-------
+E, [2017-02-21T13:34:42.006232 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/verifier/base.rb:80:in `rescue in call'
+E, [2017-02-21T13:34:42.006244 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/verifier/base.rb:83:in `call'
+E, [2017-02-21T13:34:42.006256 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:434:in `block in verify_action'
+E, [2017-02-21T13:34:42.006267 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-02-21T13:34:42.006279 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-21T13:34:42.006291 #23563] ERROR -- default-centos-68: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-21T13:34:42.006302 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-21T13:34:42.006314 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:426:in `verify_action'
+E, [2017-02-21T13:34:42.006326 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-21T13:34:42.006337 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-21T13:34:42.006349 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-21T13:34:42.006366 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-02-21T13:34:42.006378 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-21T13:34:42.006390 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-21T13:34:42.006402 #23563] ERROR -- default-centos-68: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-21T13:34:42.006414 #23563] ERROR -- default-centos-68: ----End Backtrace-----

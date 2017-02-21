@@ -3,17 +3,24 @@ driver:
   # using docker to test
   name: docker
   privileged: true
+  use_sudo: false
 
 provisioner:
   # use an ansible playbook to provision our server
   name: ansible_playbook
   # name of the host
   hosts: test-kitchen
+  #require_chef_for_busser: false
+  # ansible_version: latest
   # list of ansible galaxy requirements from the roles meta/main.yml
   # requirements_path: dependencies.yml
 
 platforms:
-  - name: centos-7.3
+  #- name: centos-7.3
+  - name: centos-6.8
+
+#verifier:
+#  name: serverspec
 
 suites:
   # suites found at /test/integration/$test-name

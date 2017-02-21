@@ -1,20 +1,87 @@
-I, [2017-02-11T22:11:50.525977 #21829]  INFO -- default-centos-73: -----> Verifying <default-centos-73>...
-I, [2017-02-11T22:11:50.526631 #21829]  INFO -- default-centos-73: Preparing files for transfer
-I, [2017-02-11T22:11:50.849506 #21829]  INFO -- default-centos-73: -----> Busser installation detected (busser)
-I, [2017-02-11T22:11:50.849626 #21829]  INFO -- default-centos-73: Installing Busser plugins: busser-serverspec
-I, [2017-02-11T22:11:51.927095 #21829]  INFO -- default-centos-73: Plugin serverspec already installed
-I, [2017-02-11T22:11:52.172670 #21829]  INFO -- default-centos-73: Removing /tmp/verifier/suites/serverspec
-I, [2017-02-11T22:11:52.173966 #21829]  INFO -- default-centos-73: Transferring files to <default-centos-73>
-I, [2017-02-11T22:11:52.569432 #21829]  INFO -- default-centos-73: -----> Running serverspec test suite
-I, [2017-02-11T22:11:52.639423 #21829]  INFO -- default-centos-73: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
-I, [2017-02-11T22:11:53.022148 #21829]  INFO -- default-centos-73: 
-I, [2017-02-11T22:11:53.022245 #21829]  INFO -- default-centos-73: ansible-$role::default
-I, [2017-02-11T22:11:53.022280 #21829]  INFO -- default-centos-73:   User "root"
-I, [2017-02-11T22:11:53.092875 #21829]  INFO -- default-centos-73: [32m    should exist[0m
-I, [2017-02-11T22:11:53.092962 #21829]  INFO -- default-centos-73:   Package "curl"
-I, [2017-02-11T22:11:53.103426 #21829]  INFO -- default-centos-73: [32m    should be installed[0m
-I, [2017-02-11T22:11:53.103534 #21829]  INFO -- default-centos-73: 
-I, [2017-02-11T22:11:53.103567 #21829]  INFO -- default-centos-73: Finished in 0.08442 seconds (files took 0.35853 seconds to load)
-I, [2017-02-11T22:11:53.103591 #21829]  INFO -- default-centos-73: [32m2 examples, 0 failures[0m
-I, [2017-02-11T22:11:53.103613 #21829]  INFO -- default-centos-73: 
-I, [2017-02-11T22:11:53.121383 #21829]  INFO -- default-centos-73: Finished verifying <default-centos-73> (0m2.59s).
+I, [2017-02-20T22:15:08.129985 #15159]  INFO -- default-centos-73: -----> Converging <default-centos-73>...
+I, [2017-02-20T22:15:08.130636 #15159]  INFO -- default-centos-73: Preparing files for transfer
+I, [2017-02-20T22:15:08.130702 #15159]  INFO -- default-centos-73: Preparing playbook
+I, [2017-02-20T22:15:08.131147 #15159]  INFO -- default-centos-73: Preparing inventory
+I, [2017-02-20T22:15:08.131422 #15159]  INFO -- default-centos-73: Preparing modules
+I, [2017-02-20T22:15:08.132111 #15159]  INFO -- default-centos-73: nothing to do for modules
+I, [2017-02-20T22:15:08.132190 #15159]  INFO -- default-centos-73: Preparing roles
+I, [2017-02-20T22:15:08.133485 #15159]  INFO -- default-centos-73: Preparing ansible.cfg file
+I, [2017-02-20T22:15:08.133574 #15159]  INFO -- default-centos-73: Empty ansible.cfg generated
+I, [2017-02-20T22:15:08.133664 #15159]  INFO -- default-centos-73: Preparing group_vars
+I, [2017-02-20T22:15:08.133809 #15159]  INFO -- default-centos-73: nothing to do for group_vars
+I, [2017-02-20T22:15:08.133844 #15159]  INFO -- default-centos-73: Preparing additional_copy_path
+I, [2017-02-20T22:15:08.133912 #15159]  INFO -- default-centos-73: Preparing host_vars
+I, [2017-02-20T22:15:08.134055 #15159]  INFO -- default-centos-73: nothing to do for host_vars
+I, [2017-02-20T22:15:08.134103 #15159]  INFO -- default-centos-73: Preparing hosts file
+I, [2017-02-20T22:15:08.134178 #15159]  INFO -- default-centos-73: Preparing spec
+I, [2017-02-20T22:15:08.134242 #15159]  INFO -- default-centos-73: nothing to do for spec
+I, [2017-02-20T22:15:08.134273 #15159]  INFO -- default-centos-73: Preparing library plugins
+I, [2017-02-20T22:15:08.134361 #15159]  INFO -- default-centos-73: nothing to do for library plugins
+I, [2017-02-20T22:15:08.134392 #15159]  INFO -- default-centos-73: Preparing callback plugins
+I, [2017-02-20T22:15:08.134533 #15159]  INFO -- default-centos-73: nothing to do for callback plugins
+I, [2017-02-20T22:15:08.134567 #15159]  INFO -- default-centos-73: Preparing filter_plugins
+I, [2017-02-20T22:15:08.134654 #15159]  INFO -- default-centos-73: nothing to do for filter_plugins
+I, [2017-02-20T22:15:08.134686 #15159]  INFO -- default-centos-73: Preparing lookup_plugins
+I, [2017-02-20T22:15:08.134773 #15159]  INFO -- default-centos-73: nothing to do for lookup_plugins
+I, [2017-02-20T22:15:08.134887 #15159]  INFO -- default-centos-73: Finished Preparing files for transfer
+I, [2017-02-20T22:15:08.135056 #15159]  INFO -- default-centos-73: Installing ansible, will try to determine platform os
+I, [2017-02-20T22:15:08.235069 #15159]  INFO -- default-centos-73: Transferring files to <default-centos-73>
+I, [2017-02-20T22:15:08.681751 #15159]  INFO -- default-centos-73: 
+I, [2017-02-20T22:15:08.681824 #15159]  INFO -- default-centos-73: PLAY [test-kitchen] ************************************************************
+I, [2017-02-20T22:15:08.720606 #15159]  INFO -- default-centos-73: 
+I, [2017-02-20T22:15:08.720746 #15159]  INFO -- default-centos-73: TASK [setup] *******************************************************************
+I, [2017-02-20T22:15:09.392890 #15159]  INFO -- default-centos-73: [0;32mok: [localhost][0m
+I, [2017-02-20T22:15:09.395179 #15159]  INFO -- default-centos-73: 
+I, [2017-02-20T22:15:09.395238 #15159]  INFO -- default-centos-73: TASK [nginx : install] *********************************************************
+I, [2017-02-20T22:15:22.676595 #15159]  INFO -- default-centos-73: [0;33mchanged: [localhost][0m
+I, [2017-02-20T22:15:22.678572 #15159]  INFO -- default-centos-73: 
+I, [2017-02-20T22:15:22.678638 #15159]  INFO -- default-centos-73: TASK [nginx : run] *************************************************************
+I, [2017-02-20T22:15:23.007343 #15159]  INFO -- default-centos-73: [0;31mfatal: [localhost]: FAILED! => {"changed": false, "failed": true, "msg": "no service or tool found for: nginx"}[0m
+I, [2017-02-20T22:15:23.009068 #15159]  INFO -- default-centos-73: 	to retry, use: --limit @/tmp/kitchen/default.retry
+I, [2017-02-20T22:15:23.009251 #15159]  INFO -- default-centos-73: 
+I, [2017-02-20T22:15:23.009283 #15159]  INFO -- default-centos-73: PLAY RECAP *********************************************************************
+I, [2017-02-20T22:15:23.009446 #15159]  INFO -- default-centos-73: [0;31mlocalhost[0m                  : [0;32mok=2   [0m [0;33mchanged=1   [0m unreachable=0    [0;31mfailed=1   [0m
+I, [2017-02-20T22:15:23.009867 #15159]  INFO -- default-centos-73: 
+E, [2017-02-20T22:15:23.034852 #15159] ERROR -- default-centos-73: Converge failed on instance <default-centos-73>.
+E, [2017-02-20T22:15:23.034999 #15159] ERROR -- default-centos-73: ------Exception-------
+E, [2017-02-20T22:15:23.035025 #15159] ERROR -- default-centos-73: Class: Kitchen::ActionFailed
+E, [2017-02-20T22:15:23.035065 #15159] ERROR -- default-centos-73: Message: SSH exited (2) for command: [ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules         /tmp/kitchen/default.yml]
+E, [2017-02-20T22:15:23.035079 #15159] ERROR -- default-centos-73: ----------------------
+E, [2017-02-20T22:15:23.035092 #15159] ERROR -- default-centos-73: ------Backtrace-------
+E, [2017-02-20T22:15:23.035104 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-02-20T22:15:23.035117 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-02-20T22:15:23.035129 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-02-20T22:15:23.035140 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-02-20T22:15:23.035151 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T22:15:23.035161 #15159] ERROR -- default-centos-73: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T22:15:23.035173 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T22:15:23.035184 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-02-20T22:15:23.035195 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T22:15:23.035207 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T22:15:23.035218 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T22:15:23.035229 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T22:15:23.035240 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T22:15:23.035251 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T22:15:23.035262 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T22:15:23.035273 #15159] ERROR -- default-centos-73: ----End Backtrace-----
+E, [2017-02-20T22:15:23.035284 #15159] ERROR -- default-centos-73: ---Nested Exception---
+E, [2017-02-20T22:15:23.035294 #15159] ERROR -- default-centos-73: Class: Kitchen::Transport::SshFailed
+E, [2017-02-20T22:15:23.035304 #15159] ERROR -- default-centos-73: Message: SSH exited (2) for command: [ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules         /tmp/kitchen/default.yml]
+E, [2017-02-20T22:15:23.035315 #15159] ERROR -- default-centos-73: ----------------------
+E, [2017-02-20T22:15:23.035336 #15159] ERROR -- default-centos-73: ------Backtrace-------
+E, [2017-02-20T22:15:23.035348 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-02-20T22:15:23.035361 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-02-20T22:15:23.035372 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-02-20T22:15:23.035383 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-02-20T22:15:23.035396 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T22:15:23.035407 #15159] ERROR -- default-centos-73: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T22:15:23.035417 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T22:15:23.035428 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-02-20T22:15:23.035439 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T22:15:23.035450 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T22:15:23.035461 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T22:15:23.035472 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T22:15:23.035483 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T22:15:23.035495 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T22:15:23.035517 #15159] ERROR -- default-centos-73: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T22:15:23.035528 #15159] ERROR -- default-centos-73: ----End Backtrace-----
