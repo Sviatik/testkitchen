@@ -1,0 +1,7 @@
+---
+  mysql_user: mysql
+  mysql_pass: mysql524297
+  mysql_db: _055_DB
+  mysql_port: 3306
+  mysql_user_cluster: cluster
+  mysql_pass_cluster: mysql

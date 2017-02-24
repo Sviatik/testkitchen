@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/home/sviat/testkitchen/.kitchen/docker_id_rsa"
+image_id: dec69fc0550d
+container_id: dcb2e3a2ea54990e9a2e28a3b46e2f58d0cb31c0c4720e22bfd69390eed97300
+hostname: localhost
+port: 32774
+last_action: verify
+last_error: 

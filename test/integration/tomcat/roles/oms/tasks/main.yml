@@ -1,0 +1,13 @@
+---
+- name: copy oms
+  copy: 
+    src: OMS.war
+    dest: /usr/share/tomcat/webapps/
+
+- name: wait for deploy project
+  uri: 
+    url: http://{{ ansible_default_ipv4.address }}:8080/OMS
+  register: response
+  until: response.status == 200
+  retries: 20
+

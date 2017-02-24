@@ -1,0 +1,16 @@
+---
+- name: Java-1.7 | install
+  yum: name=java-1.7.0-openjdk-devel state=present
+
+- name: install
+  yum: state=present name={{ item }}
+  with_items:
+    - tomcat
+    - tomcat-webapps
+    - tomcat-admin-webapps 
+
+- name: start
+  service:
+     name: tomcat
+     state: started
+     enabled: True

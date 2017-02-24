@@ -2,8 +2,8 @@
 username: kitchen
 ssh_key: "/home/sviat/testkitchen/.kitchen/docker_id_rsa"
 image_id: dec69fc0550d
-container_id: 8026518ef4d3687a8a943609f7474f0df4d2c30a335d0c057a8ec94eed2e4421
+container_id: 3183409daad2ce6e00c3c38253e428069c987c547f1420089a5b3e3670655b5b
 hostname: localhost
-port: 32772
-last_action: setup
-last_error: Kitchen::ActionFailed
+port: 32773
+last_action: verify
+last_error: 
