@@ -1,15 +1,68 @@
-<<<<<<< HEAD
-I, [2017-02-26T13:31:12.957735 #21812]  INFO -- Kitchen: -----> Starting Kitchen (v1.15.0)
-I, [2017-02-26T13:31:13.034073 #21812]  INFO -- Kitchen: -----> Verifying <generic-centos-68>...
-I, [2017-02-26T13:31:16.437456 #21812]  INFO -- Kitchen: -----> Verifying <mariadb-centos-68>...
-I, [2017-02-26T13:31:19.964219 #21812]  INFO -- Kitchen: -----> Verifying <nginx-centos-68>...
-I, [2017-02-26T13:31:23.059413 #21812]  INFO -- Kitchen: -----> Verifying <tomcat-centos-68>...
-I, [2017-02-26T13:31:26.135683 #21812]  INFO -- Kitchen: -----> Kitchen is finished. (0m13.18s)
-=======
-I, [2017-02-24T10:27:27.550909 #24700]  INFO -- Kitchen: -----> Starting Kitchen (v1.15.0)
-I, [2017-02-24T10:27:27.619481 #24700]  INFO -- Kitchen: -----> Setting up <default-centos-68>...
-I, [2017-02-24T10:27:27.621367 #24700]  INFO -- Kitchen: -----> Verifying <default-centos-68>...
-I, [2017-02-24T10:27:37.392653 #24700]  INFO -- Kitchen: -----> Setting up <generic-centos-68>...
-I, [2017-02-24T10:27:37.393978 #24700]  INFO -- Kitchen: -----> Verifying <generic-centos-68>...
-I, [2017-02-24T10:27:45.717956 #24700]  INFO -- Kitchen: -----> Kitchen is finished. (0m18.17s)
->>>>>>> f84436d23e0b436775540f69aa3203d07c268c96
+I, [2017-02-26T13:57:52.014147 #11262]  INFO -- Kitchen: -----> Starting Kitchen (v1.15.0)
+E, [2017-02-26T13:57:52.017300 #11262] ERROR -- Kitchen: ------Exception-------
+E, [2017-02-26T13:57:52.017366 #11262] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2017-02-26T13:57:52.017385 #11262] ERROR -- Kitchen: Message: Error parsing /home/sviat/ansible-test-kitchen-exmaple/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2017-02-26T13:57:52.017400 #11262] ERROR -- Kitchen: ----------------------
+E, [2017-02-26T13:57:52.017412 #11262] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-26T13:57:52.017424 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:340:in `rescue in parse_yaml_string'
+E, [2017-02-26T13:57:52.017437 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:329:in `parse_yaml_string'
+E, [2017-02-26T13:57:52.017451 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:135:in `yaml'
+E, [2017-02-26T13:57:52.017464 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:123:in `combined_hash'
+E, [2017-02-26T13:57:52.017480 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2017-02-26T13:57:52.017501 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:152:in `data'
+E, [2017-02-26T13:57:52.017516 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:131:in `suites'
+E, [2017-02-26T13:57:52.017530 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2017-02-26T13:57:52.017544 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-02-26T13:57:52.017557 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-02-26T13:57:52.017570 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-02-26T13:57:52.017583 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-02-26T13:57:52.017596 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-02-26T13:57:52.017609 #11262] ERROR -- Kitchen: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-26T13:57:52.017623 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-26T13:57:52.017636 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-26T13:57:52.017650 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-26T13:57:52.017665 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+E, [2017-02-26T13:57:52.017687 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-26T13:57:52.017709 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-26T13:57:52.017734 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+E, [2017-02-26T13:57:52.017760 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+E, [2017-02-26T13:57:52.017786 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-26T13:57:52.017809 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-26T13:57:52.017833 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-26T13:57:52.017867 #11262] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `load'
+E, [2017-02-26T13:57:52.017893 #11262] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `<main>'
+E, [2017-02-26T13:57:52.017916 #11262] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-26T13:57:52.017962 #11262] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-02-26T13:57:52.017986 #11262] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2017-02-26T13:57:52.018009 #11262] ERROR -- Kitchen: Message: (<unknown>): could not find expected ':' while scanning a simple key at line 13 column 1
+E, [2017-02-26T13:57:52.018033 #11262] ERROR -- Kitchen: ----------------------
+E, [2017-02-26T13:57:52.018056 #11262] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-26T13:57:52.018079 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:340:in `rescue in parse_yaml_string'
+E, [2017-02-26T13:57:52.018104 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:329:in `parse_yaml_string'
+E, [2017-02-26T13:57:52.018127 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:135:in `yaml'
+E, [2017-02-26T13:57:52.018153 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:123:in `combined_hash'
+E, [2017-02-26T13:57:52.018169 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2017-02-26T13:57:52.018182 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:152:in `data'
+E, [2017-02-26T13:57:52.018197 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:131:in `suites'
+E, [2017-02-26T13:57:52.018210 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2017-02-26T13:57:52.018223 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-02-26T13:57:52.018237 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-02-26T13:57:52.018250 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-02-26T13:57:52.018267 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-02-26T13:57:52.018281 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-02-26T13:57:52.018295 #11262] ERROR -- Kitchen: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-26T13:57:52.018308 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-26T13:57:52.018321 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-26T13:57:52.018334 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-26T13:57:52.018348 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+E, [2017-02-26T13:57:52.018361 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-26T13:57:52.018375 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-26T13:57:52.018388 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+E, [2017-02-26T13:57:52.018402 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+E, [2017-02-26T13:57:52.018415 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-26T13:57:52.018433 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-26T13:57:52.018449 #11262] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-26T13:57:52.018462 #11262] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `load'
+E, [2017-02-26T13:57:52.018474 #11262] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `<main>'
+E, [2017-02-26T13:57:52.018486 #11262] ERROR -- Kitchen: ----End Backtrace-----
