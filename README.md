@@ -34,7 +34,7 @@
     
     
     
-    #trouble-shuting
+# Trouble-shuting
     If you try run testkitchen on openstack instance you must do this step
         sudo groupadd docker
         sudo usermode $USER -aG docker
