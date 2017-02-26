@@ -32,7 +32,6 @@ describe "Check current conf file" do
   end
 end
 
-
 describe "check nginx default config file" do
   describe command(
     'cat /etc/nginx/nginx.conf'
@@ -50,7 +49,6 @@ describe "check nginx current config file" do
     its(:stdout) { should match /listen 80/ }
   end
 end
-
 
 describe 'check port' do
   describe port(80) do

@@ -1,0 +1,9 @@
+[app]
+some_app1 ansible_host=192.168.103.157
+some_app2 ansible_host=192.168.103.155
+[balancer]
+balancer ansible_host=192.168.103.226
+[db]
+Galera1 ansible_host=192.168.103.221
+Galera2 ansible_host=192.168.103.170
+Galera3 ansible_host=192.168.103.159

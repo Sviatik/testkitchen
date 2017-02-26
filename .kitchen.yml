@@ -10,13 +10,17 @@ provisioner:
   name: ansible_playbook
   # name of the host
   hosts: test-kitchen
+<<<<<<< HEAD
   #group_vars_path: group_vars/all/main.yml
+=======
+>>>>>>> f84436d23e0b436775540f69aa3203d07c268c96
   # list of ansible galaxy requirements from the roles meta/main.yml
   #requirements_path: dependencies.yml
 
 platforms:
   - name: centos-6.8
 
+<<<<<<< HEAD
 
 suites:
   # suites found at /test/integration/$test-name
@@ -37,3 +41,9 @@ suites:
     driver_config:
       forward:
       - 8080:8080
+=======
+suites:
+  # suites found at /test/integration/$test-name
+  - name: default
+  - name: generic
+>>>>>>> f84436d23e0b436775540f69aa3203d07c268c96

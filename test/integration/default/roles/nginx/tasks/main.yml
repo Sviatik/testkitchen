@@ -9,6 +9,10 @@
     enabled: True
 
 
+- name: install python-lib required
+  yum: name=libsemanage-python state=present
+
+
 - name: past new conf
   template:
     src: nginx.conf.j2
@@ -27,11 +31,5 @@
   notify:
     restart nginx
 
-
-#  - name: 80 port | open
-#    firewalld:
-#      zone: public 
-#      port: 80/tcp
-#      permanent: True
-#      state: enabled
-#      immediate: True
+- name: allow tcp 80
+  shell: iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT

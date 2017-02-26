@@ -15,17 +15,13 @@ describe "Check java package" do
 end
 
 
-
-
-
-describe "'appuser' mysql user is created for localhost and all other hosts" do
+describe "check java version" do
   describe command(
     'java -version'
   ) do
     its(:stderr) { should match /java version \"1.7/ }
   end
 end
-
 
 describe "Check tomcat package" do
   describe package('tomcat') do

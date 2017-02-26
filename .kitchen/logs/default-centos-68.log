@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 I, [2017-02-22T21:23:33.689965 #27238]  INFO -- default-centos-68: -----> Converging <default-centos-68>...
 I, [2017-02-22T21:23:33.690758 #27238]  INFO -- default-centos-68: Preparing files for transfer
 I, [2017-02-22T21:23:33.690846 #27238]  INFO -- default-centos-68: Preparing playbook
@@ -42,3 +43,65 @@ I, [2017-02-22T21:23:42.223130 #27238]  INFO -- default-centos-68: PLAY RECAP **
 I, [2017-02-22T21:23:42.223299 #27238]  INFO -- default-centos-68: [0;32mlocalhost[0m                  : [0;32mok=3   [0m changed=0    unreachable=0    failed=0   
 I, [2017-02-22T21:23:42.223447 #27238]  INFO -- default-centos-68: 
 I, [2017-02-22T21:23:42.266349 #27238]  INFO -- default-centos-68: Finished converging <default-centos-68> (0m8.57s).
+=======
+I, [2017-02-24T10:27:27.619542 #24700]  INFO -- default-centos-68: -----> Setting up <default-centos-68>...
+I, [2017-02-24T10:27:27.621288 #24700]  INFO -- default-centos-68: Finished setting up <default-centos-68> (0m0.00s).
+I, [2017-02-24T10:27:27.621396 #24700]  INFO -- default-centos-68: -----> Verifying <default-centos-68>...
+I, [2017-02-24T10:27:27.621941 #24700]  INFO -- default-centos-68: Preparing files for transfer
+I, [2017-02-24T10:27:27.848115 #24700]  INFO -- default-centos-68: -----> Installing Busser (busser)
+I, [2017-02-24T10:27:29.071089 #24700]  INFO -- default-centos-68: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem (  3%)Fetching: thor-0.19.0.gem (  6%)Fetching: thor-0.19.0.gem (  9%)Fetching: thor-0.19.0.gem ( 12%)Fetching: thor-0.19.0.gem ( 15%)Fetching: thor-0.19.0.gem ( 17%)Fetching: thor-0.19.0.gem ( 20%)Fetching: thor-0.19.0.gem ( 23%)Fetching: thor-0.19.0.gem ( 26%)Fetching: thor-0.19.0.gem ( 29%)Fetching: thor-0.19.0.gem ( 32%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2017-02-24T10:27:29.116497 #24700]  INFO -- default-centos-68: Successfully installed thor-0.19.0
+I, [2017-02-24T10:27:29.175203 #24700]  INFO -- default-centos-68: Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+I, [2017-02-24T10:27:29.198986 #24700]  INFO -- default-centos-68: Successfully installed busser-0.7.1
+I, [2017-02-24T10:27:29.199262 #24700]  INFO -- default-centos-68: 2 gems installed
+I, [2017-02-24T10:27:29.206057 #24700]  INFO -- default-centos-68: Installing Busser plugins: busser-serverspec
+I, [2017-02-24T10:27:32.242664 #24700]  INFO -- default-centos-68: Plugin serverspec installed (version 0.5.10)
+I, [2017-02-24T10:27:32.248060 #24700]  INFO -- default-centos-68: -----> Running postinstall for serverspec plugin
+I, [2017-02-24T10:27:33.037148 #24700]  INFO -- default-centos-68: Suite path directory /tmp/verifier/suites does not exist, skipping.
+I, [2017-02-24T10:27:33.042937 #24700]  INFO -- default-centos-68: Transferring files to <default-centos-68>
+I, [2017-02-24T10:27:33.352025 #24700]  INFO -- default-centos-68: -----> Running serverspec test suite
+I, [2017-02-24T10:27:33.356868 #24700]  INFO -- default-centos-68: -----> Installing Serverspec..
+I, [2017-02-24T10:27:34.821298 #24700]  INFO -- default-centos-68: Fetching: diff-lcs-1.3.gemFetching: diff-lcs-1.3.gem (  5%)Fetching: diff-lcs-1.3.gem ( 11%)Fetching: diff-lcs-1.3.gem ( 17%)Fetching: diff-lcs-1.3.gem ( 22%)Fetching: diff-lcs-1.3.gem ( 28%)Fetching: diff-lcs-1.3.gem ( 34%)Fetching: diff-lcs-1.3.gem ( 40%)Fetching: diff-lcs-1.3.gem ( 46%)Fetching: diff-lcs-1.3.gem ( 52%)Fetching: diff-lcs-1.3.gem ( 58%)Fetching: diff-lcs-1.3.gem ( 64%)Fetching: diff-lcs-1.3.gem ( 70%)Fetching: diff-lcs-1.3.gem (100%)Fetching: diff-lcs-1.3.gem (100%)
+I, [2017-02-24T10:27:34.993691 #24700]  INFO -- default-centos-68: Fetching: rspec-expectations-3.5.0.gemFetching: rspec-expectations-3.5.0.gem ( 21%)Fetching: rspec-expectations-3.5.0.gem ( 42%)Fetching: rspec-expectations-3.5.0.gem ( 63%)Fetching: rspec-expectations-3.5.0.gem ( 84%)Fetching: rspec-expectations-3.5.0.gem (100%)Fetching: rspec-expectations-3.5.0.gem (100%)
+I, [2017-02-24T10:27:35.174690 #24700]  INFO -- default-centos-68: Fetching: rspec-mocks-3.5.0.gemFetching: rspec-mocks-3.5.0.gem ( 21%)Fetching: rspec-mocks-3.5.0.gem ( 42%)Fetching: rspec-mocks-3.5.0.gem ( 63%)Fetching: rspec-mocks-3.5.0.gem ( 85%)Fetching: rspec-mocks-3.5.0.gem (100%)Fetching: rspec-mocks-3.5.0.gem (100%)
+I, [2017-02-24T10:27:35.329342 #24700]  INFO -- default-centos-68: Fetching: rspec-3.5.0.gemFetching: rspec-3.5.0.gem (100%)Fetching: rspec-3.5.0.gem (100%)
+I, [2017-02-24T10:27:35.435798 #24700]  INFO -- default-centos-68: Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
+I, [2017-02-24T10:27:35.556938 #24700]  INFO -- default-centos-68: Fetching: multi_json-1.12.1.gemFetching: multi_json-1.12.1.gem ( 60%)Fetching: multi_json-1.12.1.gem (100%)Fetching: multi_json-1.12.1.gem (100%)
+I, [2017-02-24T10:27:35.754898 #24700]  INFO -- default-centos-68: Fetching: net-ssh-4.1.0.gemFetching: net-ssh-4.1.0.gem ( 13%)Fetching: net-ssh-4.1.0.gem ( 26%)Fetching: net-ssh-4.1.0.gem ( 39%)Fetching: net-ssh-4.1.0.gem ( 52%)Fetching: net-ssh-4.1.0.gem ( 65%)Fetching: net-ssh-4.1.0.gem ( 78%)Fetching: net-ssh-4.1.0.gem ( 91%)Fetching: net-ssh-4.1.0.gem (100%)Fetching: net-ssh-4.1.0.gem (100%)
+I, [2017-02-24T10:27:35.911509 #24700]  INFO -- default-centos-68: Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem ( 48%)Fetching: net-scp-1.2.1.gem ( 98%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)
+I, [2017-02-24T10:27:36.030560 #24700]  INFO -- default-centos-68: Fetching: net-telnet-0.1.1.gemFetching: net-telnet-0.1.1.gem ( 92%)Fetching: net-telnet-0.1.1.gem (100%)Fetching: net-telnet-0.1.1.gem (100%)
+I, [2017-02-24T10:27:36.133668 #24700]  INFO -- default-centos-68: Fetching: sfl-2.3.gemFetching: sfl-2.3.gem ( 19%)Fetching: sfl-2.3.gem ( 46%)Fetching: sfl-2.3.gem ( 73%)Fetching: sfl-2.3.gem ( 99%)Fetching: sfl-2.3.gem (100%)Fetching: sfl-2.3.gem (100%)
+I, [2017-02-24T10:27:36.287170 #24700]  INFO -- default-centos-68: Fetching: specinfra-2.67.1.gemFetching: specinfra-2.67.1.gem (  3%)Fetching: specinfra-2.67.1.gem (  6%)Fetching: specinfra-2.67.1.gem (  9%)Fetching: specinfra-2.67.1.gem ( 12%)Fetching: specinfra-2.67.1.gem ( 16%)Fetching: specinfra-2.67.1.gem ( 19%)Fetching: specinfra-2.67.1.gem ( 22%)Fetching: specinfra-2.67.1.gem ( 25%)Fetching: specinfra-2.67.1.gem ( 29%)Fetching: specinfra-2.67.1.gem ( 32%)Fetching: specinfra-2.67.1.gem ( 35%)Fetching: specinfra-2.67.1.gem ( 38%)Fetching: specinfra-2.67.1.gem ( 58%)Fetching: specinfra-2.67.1.gem ( 77%)Fetching: specinfra-2.67.1.gem ( 96%)Fetching: specinfra-2.67.1.gem (100%)Fetching: specinfra-2.67.1.gem (100%)
+I, [2017-02-24T10:27:36.497212 #24700]  INFO -- default-centos-68: Fetching: serverspec-2.38.0.gemFetching: serverspec-2.38.0.gem ( 40%)Fetching: serverspec-2.38.0.gem ( 82%)Fetching: serverspec-2.38.0.gem (100%)Fetching: serverspec-2.38.0.gem (100%)
+I, [2017-02-24T10:27:36.570015 #24700]  INFO -- default-centos-68: -----> serverspec installed (version 2.38.0)
+I, [2017-02-24T10:27:36.656407 #24700]  INFO -- default-centos-68: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2017-02-24T10:27:37.219879 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.219983 #24700]  INFO -- default-centos-68: Check default conf file
+I, [2017-02-24T10:27:37.220205 #24700]  INFO -- default-centos-68:   File "/etc/nginx/nginx.conf"
+I, [2017-02-24T10:27:37.263556 #24700]  INFO -- default-centos-68: [32m    should exist[0m
+I, [2017-02-24T10:27:37.264196 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.264290 #24700]  INFO -- default-centos-68: Check current conf file
+I, [2017-02-24T10:27:37.264339 #24700]  INFO -- default-centos-68:   File "/etc/nginx/sites-enabled/default"
+I, [2017-02-24T10:27:37.268821 #24700]  INFO -- default-centos-68: [32m    should exist[0m
+I, [2017-02-24T10:27:37.269263 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.269327 #24700]  INFO -- default-centos-68: Check packages
+I, [2017-02-24T10:27:37.269356 #24700]  INFO -- default-centos-68:   Package "curl"
+I, [2017-02-24T10:27:37.309313 #24700]  INFO -- default-centos-68: [32m    should be installed[0m
+I, [2017-02-24T10:27:37.309773 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.309823 #24700]  INFO -- default-centos-68: Check nginx package
+I, [2017-02-24T10:27:37.309846 #24700]  INFO -- default-centos-68:   Package "nginx"
+I, [2017-02-24T10:27:37.350771 #24700]  INFO -- default-centos-68: [32m    should be installed[0m
+I, [2017-02-24T10:27:37.351270 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.351333 #24700]  INFO -- default-centos-68: check nginx enabled
+I, [2017-02-24T10:27:37.351364 #24700]  INFO -- default-centos-68:   Service "nginx"
+I, [2017-02-24T10:27:37.357937 #24700]  INFO -- default-centos-68: [32m    should be enabled[0m
+I, [2017-02-24T10:27:37.358412 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.358477 #24700]  INFO -- default-centos-68: check port
+I, [2017-02-24T10:27:37.358515 #24700]  INFO -- default-centos-68:   Port "80"
+I, [2017-02-24T10:27:37.368835 #24700]  INFO -- default-centos-68: [32m    should be listening with tcp[0m
+I, [2017-02-24T10:27:37.369343 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.369417 #24700]  INFO -- default-centos-68: Finished in 0.14957 seconds (files took 0.51997 seconds to load)
+I, [2017-02-24T10:27:37.369465 #24700]  INFO -- default-centos-68: [32m6 examples, 0 failures[0m
+I, [2017-02-24T10:27:37.369814 #24700]  INFO -- default-centos-68: 
+I, [2017-02-24T10:27:37.391776 #24700]  INFO -- default-centos-68: Finished verifying <default-centos-68> (0m9.77s).
+>>>>>>> f84436d23e0b436775540f69aa3203d07c268c96
