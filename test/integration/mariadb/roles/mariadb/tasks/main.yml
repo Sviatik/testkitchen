@@ -1,0 +1,47 @@
+---
+- name: install mariadb and requery soft
+  yum: state=present name={{ item }}
+  with_items: 
+    - mysql-server
+    - MySQL-python  
+  notify: 
+    start mariadb
+
+- meta: flush_handlers
+
+- name: MySQL | Add replication user user
+  mysql_user: 
+    name: '{{ mysql_user_cluster }}'
+    password: '{{ mysql_pass_cluster }}'
+    host: '%'
+    priv: '*.*:USAGE'
+    state: present
+
+- name: update prive replication user
+  mysql_user: 
+    append_privs: true
+    name: '{{ mysql_user_cluster }}'
+    password: '{{ mysql_pass_cluster }}'
+    host: '%'
+    priv: '*.*:ALL,GRANT'
+    state: present
+
+- name: MySQL | Add new user
+  mysql_user: 
+    name: '{{ mysql_user }}'
+    password: '{{ mysql_pass }}'
+    priv: '*.*:ALL,GRANT'
+    state: present
+
+- name: MySQL | Add new user
+  mysql_user: 
+    name: '{{ mysql_user }}'
+    password: '{{ mysql_pass }}'
+    host: '%'
+    priv: '*.*:ALL,GRANT'
+    state: present
+
+- name: MySQL | Add new DB
+  mysql_db:
+    name: '{{ mysql_db }}'
+    state: present

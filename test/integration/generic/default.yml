@@ -1,0 +1,19 @@
+---
+# host to test against
+- hosts: test-kitchen
+  remote_user: root
+
+  tasks:
+
+  - name: common soft
+    yum: state=present name={{ item }}
+    with_items: 
+          - epel-release
+          - wget
+
+  #- name: update system
+  #  yum: name='*' state=latest
+
+  - name: rename hostname 
+    hostname:
+      name: '{{ inventory_hostname }}'

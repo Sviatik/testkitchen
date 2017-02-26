@@ -1,0 +1,12 @@
+---
+- name: restart master
+  shell: service mysql restart --wsrep-new-cluster
+  listen: restart master node
+
+- name: restart mariadb
+  service: name=mysql state=restarted
+  listen: restart mariadb
+
+- name: start mariadb
+  service: name=mysqld state=started
+  listen: start mariadb

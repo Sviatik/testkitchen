@@ -1,0 +1,23 @@
+I, [2017-02-26T13:31:13.034136 #21812]  INFO -- generic-centos-68: -----> Verifying <generic-centos-68>...
+I, [2017-02-26T13:31:13.034949 #21812]  INFO -- generic-centos-68: Preparing files for transfer
+I, [2017-02-26T13:31:13.292594 #21812]  INFO -- generic-centos-68: -----> Busser installation detected (busser)
+I, [2017-02-26T13:31:13.292865 #21812]  INFO -- generic-centos-68: Installing Busser plugins: busser-serverspec
+I, [2017-02-26T13:31:14.770342 #21812]  INFO -- generic-centos-68: Plugin serverspec already installed
+I, [2017-02-26T13:31:15.004733 #21812]  INFO -- generic-centos-68: Removing /tmp/verifier/suites/serverspec
+I, [2017-02-26T13:31:15.011305 #21812]  INFO -- generic-centos-68: Transferring files to <generic-centos-68>
+I, [2017-02-26T13:31:15.367898 #21812]  INFO -- generic-centos-68: -----> Running serverspec test suite
+I, [2017-02-26T13:31:15.463618 #21812]  INFO -- generic-centos-68: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2017-02-26T13:31:15.883015 #21812]  INFO -- generic-centos-68: 
+I, [2017-02-26T13:31:15.883090 #21812]  INFO -- generic-centos-68: Check epel repositories
+I, [2017-02-26T13:31:15.883272 #21812]  INFO -- generic-centos-68:   Yumrepo "epel"
+I, [2017-02-26T13:31:16.157377 #21812]  INFO -- generic-centos-68: [32m    should exist[0m
+I, [2017-02-26T13:31:16.376357 #21812]  INFO -- generic-centos-68: [32m    should be enabled[0m
+I, [2017-02-26T13:31:16.376796 #21812]  INFO -- generic-centos-68: 
+I, [2017-02-26T13:31:16.376981 #21812]  INFO -- generic-centos-68: Check wget package
+I, [2017-02-26T13:31:16.377117 #21812]  INFO -- generic-centos-68:   Package "wget"
+I, [2017-02-26T13:31:16.416412 #21812]  INFO -- generic-centos-68: [32m    should be installed[0m
+I, [2017-02-26T13:31:16.417018 #21812]  INFO -- generic-centos-68: 
+I, [2017-02-26T13:31:16.417090 #21812]  INFO -- generic-centos-68: Finished in 0.53428 seconds (files took 0.37629 seconds to load)
+I, [2017-02-26T13:31:16.417460 #21812]  INFO -- generic-centos-68: [32m3 examples, 0 failures[0m
+I, [2017-02-26T13:31:16.417710 #21812]  INFO -- generic-centos-68: 
+I, [2017-02-26T13:31:16.436242 #21812]  INFO -- generic-centos-68: Finished verifying <generic-centos-68> (0m3.40s).

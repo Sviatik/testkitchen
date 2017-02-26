@@ -1,0 +1,56 @@
+I, [2017-02-26T13:31:16.437594 #21812]  INFO -- mariadb-centos-68: -----> Verifying <mariadb-centos-68>...
+I, [2017-02-26T13:31:16.438134 #21812]  INFO -- mariadb-centos-68: Preparing files for transfer
+I, [2017-02-26T13:31:16.692098 #21812]  INFO -- mariadb-centos-68: -----> Busser installation detected (busser)
+I, [2017-02-26T13:31:16.692299 #21812]  INFO -- mariadb-centos-68: Installing Busser plugins: busser-serverspec
+I, [2017-02-26T13:31:18.194525 #21812]  INFO -- mariadb-centos-68: Plugin serverspec already installed
+I, [2017-02-26T13:31:18.426334 #21812]  INFO -- mariadb-centos-68: Removing /tmp/verifier/suites/serverspec
+I, [2017-02-26T13:31:18.433119 #21812]  INFO -- mariadb-centos-68: Transferring files to <mariadb-centos-68>
+I, [2017-02-26T13:31:18.788472 #21812]  INFO -- mariadb-centos-68: -----> Running serverspec test suite
+I, [2017-02-26T13:31:18.881841 #21812]  INFO -- mariadb-centos-68: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2017-02-26T13:31:19.293323 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.293397 #21812]  INFO -- mariadb-centos-68: Check epel repositories
+I, [2017-02-26T13:31:19.293580 #21812]  INFO -- mariadb-centos-68:   Yumrepo "epel"
+I, [2017-02-26T13:31:19.555781 #21812]  INFO -- mariadb-centos-68: [32m    should exist[0m
+I, [2017-02-26T13:31:19.775405 #21812]  INFO -- mariadb-centos-68: [32m    should be enabled[0m
+I, [2017-02-26T13:31:19.775851 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.775910 #21812]  INFO -- mariadb-centos-68: Check mysql-server package
+I, [2017-02-26T13:31:19.775951 #21812]  INFO -- mariadb-centos-68:   Package "mysql-server"
+I, [2017-02-26T13:31:19.815597 #21812]  INFO -- mariadb-centos-68: [32m    should be installed[0m
+I, [2017-02-26T13:31:19.816064 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.816219 #21812]  INFO -- mariadb-centos-68: Check MySQL-python package
+I, [2017-02-26T13:31:19.816252 #21812]  INFO -- mariadb-centos-68:   Package "MySQL-python"
+I, [2017-02-26T13:31:19.855899 #21812]  INFO -- mariadb-centos-68: [32m    should be installed[0m
+I, [2017-02-26T13:31:19.856094 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.856238 #21812]  INFO -- mariadb-centos-68: check mysql-server enabled
+I, [2017-02-26T13:31:19.856355 #21812]  INFO -- mariadb-centos-68:   Service "mysqld"
+I, [2017-02-26T13:31:19.897677 #21812]  INFO -- mariadb-centos-68: [32m    should be running[0m
+I, [2017-02-26T13:31:19.897874 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.898014 #21812]  INFO -- mariadb-centos-68: check port
+I, [2017-02-26T13:31:19.898142 #21812]  INFO -- mariadb-centos-68:   Port "3306"
+I, [2017-02-26T13:31:19.907066 #21812]  INFO -- mariadb-centos-68: [32m    should be listening with tcp[0m
+I, [2017-02-26T13:31:19.907388 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.907449 #21812]  INFO -- mariadb-centos-68: check mysql users
+I, [2017-02-26T13:31:19.907470 #21812]  INFO -- mariadb-centos-68:   Command "echo "SELECT User FROM mysql.user" | mysql --user=mysql --password=mysql524297"
+I, [2017-02-26T13:31:19.907485 #21812]  INFO -- mariadb-centos-68:     stdout
+I, [2017-02-26T13:31:19.917804 #21812]  INFO -- mariadb-centos-68: [32m      should match /cluster/[0m
+I, [2017-02-26T13:31:19.918013 #21812]  INFO -- mariadb-centos-68:     stdout
+I, [2017-02-26T13:31:19.918974 #21812]  INFO -- mariadb-centos-68: [32m      should match /mysql/[0m
+I, [2017-02-26T13:31:19.919296 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.919431 #21812]  INFO -- mariadb-centos-68: check mysql user is created for localhost and all other hosts
+I, [2017-02-26T13:31:19.919465 #21812]  INFO -- mariadb-centos-68:   Command "echo "SELECT User, Host FROM mysql.user" | mysql --user=mysql --password=mysql524297"
+I, [2017-02-26T13:31:19.919507 #21812]  INFO -- mariadb-centos-68:     stdout
+I, [2017-02-26T13:31:19.929132 #21812]  INFO -- mariadb-centos-68: [32m      should match /mysql\tlocalhost/[0m
+I, [2017-02-26T13:31:19.929396 #21812]  INFO -- mariadb-centos-68:     stdout
+I, [2017-02-26T13:31:19.930406 #21812]  INFO -- mariadb-centos-68: [32m      should match /mysql\t%/[0m
+I, [2017-02-26T13:31:19.930655 #21812]  INFO -- mariadb-centos-68:     stdout
+I, [2017-02-26T13:31:19.931433 #21812]  INFO -- mariadb-centos-68: [32m      should match /cluster\t%/[0m
+I, [2017-02-26T13:31:19.931637 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.931684 #21812]  INFO -- mariadb-centos-68: check database exists
+I, [2017-02-26T13:31:19.931925 #21812]  INFO -- mariadb-centos-68:   Command "echo "SHOW DATABASES LIKE '_055_DB'" | mysql --user=mysql --password=mysql524297"
+I, [2017-02-26T13:31:19.932108 #21812]  INFO -- mariadb-centos-68:     stdout
+I, [2017-02-26T13:31:19.942202 #21812]  INFO -- mariadb-centos-68: [32m      should match /_055_DB/[0m
+I, [2017-02-26T13:31:19.942917 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.942999 #21812]  INFO -- mariadb-centos-68: Finished in 0.64963 seconds (files took 0.36863 seconds to load)
+I, [2017-02-26T13:31:19.943030 #21812]  INFO -- mariadb-centos-68: [32m12 examples, 0 failures[0m
+I, [2017-02-26T13:31:19.943242 #21812]  INFO -- mariadb-centos-68: 
+I, [2017-02-26T13:31:19.963616 #21812]  INFO -- mariadb-centos-68: Finished verifying <mariadb-centos-68> (0m3.52s).

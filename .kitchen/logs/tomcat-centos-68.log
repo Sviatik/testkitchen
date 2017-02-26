@@ -1,0 +1,35 @@
+I, [2017-02-26T13:31:23.059462 #21812]  INFO -- tomcat-centos-68: -----> Verifying <tomcat-centos-68>...
+I, [2017-02-26T13:31:23.059956 #21812]  INFO -- tomcat-centos-68: Preparing files for transfer
+I, [2017-02-26T13:31:23.316080 #21812]  INFO -- tomcat-centos-68: -----> Busser installation detected (busser)
+I, [2017-02-26T13:31:23.316370 #21812]  INFO -- tomcat-centos-68: Installing Busser plugins: busser-serverspec
+I, [2017-02-26T13:31:24.766950 #21812]  INFO -- tomcat-centos-68: Plugin serverspec already installed
+I, [2017-02-26T13:31:24.999543 #21812]  INFO -- tomcat-centos-68: Removing /tmp/verifier/suites/serverspec
+I, [2017-02-26T13:31:25.005857 #21812]  INFO -- tomcat-centos-68: Transferring files to <tomcat-centos-68>
+I, [2017-02-26T13:31:25.362627 #21812]  INFO -- tomcat-centos-68: -----> Running serverspec test suite
+I, [2017-02-26T13:31:25.459167 #21812]  INFO -- tomcat-centos-68: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2017-02-26T13:31:25.875278 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:25.875351 #21812]  INFO -- tomcat-centos-68: Check java package
+I, [2017-02-26T13:31:25.875583 #21812]  INFO -- tomcat-centos-68:   Package "java-1.7.0-openjdk-devel"
+I, [2017-02-26T13:31:25.951365 #21812]  INFO -- tomcat-centos-68: [32m    should be installed[0m
+I, [2017-02-26T13:31:25.951635 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:25.951821 #21812]  INFO -- tomcat-centos-68: 'appuser' mysql user is created for localhost and all other hosts
+I, [2017-02-26T13:31:25.951994 #21812]  INFO -- tomcat-centos-68:   Command "java -version"
+I, [2017-02-26T13:31:25.952120 #21812]  INFO -- tomcat-centos-68:     stderr
+I, [2017-02-26T13:31:26.016670 #21812]  INFO -- tomcat-centos-68: [32m      should match /java version \"1.7/[0m
+I, [2017-02-26T13:31:26.016946 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:26.016997 #21812]  INFO -- tomcat-centos-68: Check tomcat package
+I, [2017-02-26T13:31:26.017173 #21812]  INFO -- tomcat-centos-68:   Package "tomcat"
+I, [2017-02-26T13:31:26.057719 #21812]  INFO -- tomcat-centos-68: [32m    should be installed[0m
+I, [2017-02-26T13:31:26.057920 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:26.058077 #21812]  INFO -- tomcat-centos-68: check tomcat enabled
+I, [2017-02-26T13:31:26.058218 #21812]  INFO -- tomcat-centos-68:   Service "tomcat"
+I, [2017-02-26T13:31:26.108000 #21812]  INFO -- tomcat-centos-68: [32m    should be running[0m
+I, [2017-02-26T13:31:26.108237 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:26.108363 #21812]  INFO -- tomcat-centos-68: check port
+I, [2017-02-26T13:31:26.108476 #21812]  INFO -- tomcat-centos-68:   Port "8080"
+I, [2017-02-26T13:31:26.116382 #21812]  INFO -- tomcat-centos-68: [32m    should be listening with tcp[0m
+I, [2017-02-26T13:31:26.116821 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:26.116869 #21812]  INFO -- tomcat-centos-68: Finished in 0.24166 seconds (files took 0.37334 seconds to load)
+I, [2017-02-26T13:31:26.116890 #21812]  INFO -- tomcat-centos-68: [32m5 examples, 0 failures[0m
+I, [2017-02-26T13:31:26.117200 #21812]  INFO -- tomcat-centos-68: 
+I, [2017-02-26T13:31:26.135360 #21812]  INFO -- tomcat-centos-68: Finished verifying <tomcat-centos-68> (0m3.07s).

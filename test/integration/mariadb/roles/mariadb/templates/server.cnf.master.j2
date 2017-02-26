@@ -1,0 +1,26 @@
+[mysqld]
+bind-address=0.0.0.0
+collation-server = utf8_general_ci
+init-connect = 'SET NAMES utf8'
+character-set-server = utf8
+
+
+[galera]
+wsrep_on=ON
+binlog_format=ROW
+innodb_autoinc_lock_mode=2
+innodb_locks_unsafe_for_binlog=1
+query_cache_size=0
+query_cache_type=0
+default_storage_engine=InnoDB
+innodb_log_file_size=100M
+innodb_file_per_table
+innodb_flush_log_at_trx_commit=2
+wsrep_provider=/usr/lib64/galera/libgalera_smm.so
+wsrep_cluster_address=gcomm://
+wsrep_cluster_name=galera_cluster
+wsrep_node_address={{ ansible_default_ipv4.address }}
+wsrep_node_name={{ ansible_hostname }}
+wsrep_sst_method=rsync
+wsrep_sst_auth={{ mysql_user_cluster }}:{{ mysql_pass_cluster }}
+

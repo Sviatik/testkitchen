@@ -1,0 +1,44 @@
+I, [2017-02-22T21:23:33.689965 #27238]  INFO -- default-centos-68: -----> Converging <default-centos-68>...
+I, [2017-02-22T21:23:33.690758 #27238]  INFO -- default-centos-68: Preparing files for transfer
+I, [2017-02-22T21:23:33.690846 #27238]  INFO -- default-centos-68: Preparing playbook
+I, [2017-02-22T21:23:33.691232 #27238]  INFO -- default-centos-68: Preparing inventory
+I, [2017-02-22T21:23:33.691310 #27238]  INFO -- default-centos-68: Preparing modules
+I, [2017-02-22T21:23:33.691476 #27238]  INFO -- default-centos-68: nothing to do for modules
+I, [2017-02-22T21:23:33.691523 #27238]  INFO -- default-centos-68: Preparing roles
+I, [2017-02-22T21:23:33.724193 #27238]  INFO -- default-centos-68: Preparing ansible.cfg file
+I, [2017-02-22T21:23:33.724474 #27238]  INFO -- default-centos-68: Empty ansible.cfg generated
+I, [2017-02-22T21:23:33.724581 #27238]  INFO -- default-centos-68: Preparing group_vars
+I, [2017-02-22T21:23:33.724706 #27238]  INFO -- default-centos-68: nothing to do for group_vars
+I, [2017-02-22T21:23:33.724753 #27238]  INFO -- default-centos-68: Preparing additional_copy_path
+I, [2017-02-22T21:23:33.724849 #27238]  INFO -- default-centos-68: Preparing host_vars
+I, [2017-02-22T21:23:33.724967 #27238]  INFO -- default-centos-68: nothing to do for host_vars
+I, [2017-02-22T21:23:33.725028 #27238]  INFO -- default-centos-68: Preparing hosts file
+I, [2017-02-22T21:23:33.725131 #27238]  INFO -- default-centos-68: Preparing spec
+I, [2017-02-22T21:23:33.725228 #27238]  INFO -- default-centos-68: nothing to do for spec
+I, [2017-02-22T21:23:33.725271 #27238]  INFO -- default-centos-68: Preparing library plugins
+I, [2017-02-22T21:23:33.725393 #27238]  INFO -- default-centos-68: nothing to do for library plugins
+I, [2017-02-22T21:23:33.725436 #27238]  INFO -- default-centos-68: Preparing callback plugins
+I, [2017-02-22T21:23:33.725562 #27238]  INFO -- default-centos-68: nothing to do for callback plugins
+I, [2017-02-22T21:23:33.725605 #27238]  INFO -- default-centos-68: Preparing filter_plugins
+I, [2017-02-22T21:23:33.725785 #27238]  INFO -- default-centos-68: nothing to do for filter_plugins
+I, [2017-02-22T21:23:33.725824 #27238]  INFO -- default-centos-68: Preparing lookup_plugins
+I, [2017-02-22T21:23:33.725944 #27238]  INFO -- default-centos-68: nothing to do for lookup_plugins
+I, [2017-02-22T21:23:33.726043 #27238]  INFO -- default-centos-68: Finished Preparing files for transfer
+I, [2017-02-22T21:23:33.726239 #27238]  INFO -- default-centos-68: Installing ansible, will try to determine platform os
+I, [2017-02-22T21:23:33.814009 #27238]  INFO -- default-centos-68: Transferring files to <default-centos-68>
+I, [2017-02-22T21:23:37.557020 #27238]  INFO -- default-centos-68: 
+I, [2017-02-22T21:23:37.557096 #27238]  INFO -- default-centos-68: PLAY [test-kitchen] ************************************************************
+I, [2017-02-22T21:23:37.592655 #27238]  INFO -- default-centos-68: 
+I, [2017-02-22T21:23:37.592728 #27238]  INFO -- default-centos-68: TASK [setup] *******************************************************************
+I, [2017-02-22T21:23:40.948196 #27238]  INFO -- default-centos-68: [0;32mok: [localhost][0m
+I, [2017-02-22T21:23:40.958005 #27238]  INFO -- default-centos-68: 
+I, [2017-02-22T21:23:40.958109 #27238]  INFO -- default-centos-68: TASK [common soft] *************************************************************
+I, [2017-02-22T21:23:41.485511 #27238]  INFO -- default-centos-68: [0;32mok: [localhost] => (item=[u'epel-release', u'wget'])[0m
+I, [2017-02-22T21:23:41.504679 #27238]  INFO -- default-centos-68: 
+I, [2017-02-22T21:23:41.504779 #27238]  INFO -- default-centos-68: TASK [rename hostname] *********************************************************
+I, [2017-02-22T21:23:42.221212 #27238]  INFO -- default-centos-68: [0;32mok: [localhost][0m
+I, [2017-02-22T21:23:42.223065 #27238]  INFO -- default-centos-68: 
+I, [2017-02-22T21:23:42.223130 #27238]  INFO -- default-centos-68: PLAY RECAP *********************************************************************
+I, [2017-02-22T21:23:42.223299 #27238]  INFO -- default-centos-68: [0;32mlocalhost[0m                  : [0;32mok=3   [0m changed=0    unreachable=0    failed=0   
+I, [2017-02-22T21:23:42.223447 #27238]  INFO -- default-centos-68: 
+I, [2017-02-22T21:23:42.266349 #27238]  INFO -- default-centos-68: Finished converging <default-centos-68> (0m8.57s).
