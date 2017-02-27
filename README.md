@@ -1,17 +1,17 @@
 # Test Kitchen / doker / ansible / serverspec
 ## Install all soft
-    yum install gem docker git
+    sudo yum install gem docker git
     
-    gem install test-kitchen
-    gem install kitchen-ansible
-    gem install kitchen-docker
-    gem install kitchen-verifier-serverspec
-    gem install net-ssh --version 3.2.0
-    gem uninstall net-ssh --version 4.1.0
+    sudo gem install test-kitchen
+    sudo gem install kitchen-ansible
+    sudo gem install kitchen-docker
+    sudo gem install kitchen-verifier-serverspec
+    sudo gem install net-ssh --version 3.2.0
+    sudo gem uninstall net-ssh --version 4.1.0
     
 ## Run test kitchen
-    systemctl start docker
-    systemctl enable docker
+    sudo systemctl start docker
+    sudo systemctl enable docker
     
     git clone http://192.168.103.232/sstettc/testkitchen.git 
     or
