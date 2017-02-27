@@ -18,6 +18,7 @@
     git clone https://github.com/Sviatik/testkitchen.git
     
     cd testkitchen
+    kitchen destroy
     kitchen create
     kitchen converge
     kitchen verify
