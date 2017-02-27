@@ -38,9 +38,12 @@
 # Trouble-shuting
     If you try run testkitchen on openstack instance you must do this step
         sudo groupadd docker
-        sudo usermode $USER -aG docker
+        sudo usermod $USER -aG docker
         Logout and login again
-
+        
+    If you have problem with usermod (command not found) run this
+        sudo chmod +x /usr/sbin/usermod    
+        
 
 
 
